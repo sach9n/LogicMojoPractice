@@ -14,7 +14,7 @@ public class getFibbonacchi {
          System.out.println(a);
      }
 
-
+  // O(n)
     }
 
 
@@ -31,6 +31,7 @@ public class getFibbonacchi {
 
            System.out.println(a);
            // this approach is with out using third variable fine
+           // Time Complicity is O(n)
        }
     }
     public static void main(String[] args) {

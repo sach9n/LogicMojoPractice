@@ -8,6 +8,7 @@ public class SwappingNumbers {
         a = c;
 
         System.out.println("The Swapped numbers are  : " + " a = " + a + " and  b = " + b);
+        // TimeComplecity O(1)
     }
 
 
@@ -18,6 +19,7 @@ public class SwappingNumbers {
          a = b - a; // here a = 40 - 10;
          b = b - a ; // here b = 40 -30;
         System.out.println("The Swapped numbers are  : " + " a = " + a + " and  b = " + b);
+        // TimeComplecity O(1)
     }
 
     public static void main(String[] args) {
