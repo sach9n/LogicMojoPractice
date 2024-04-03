@@ -2,20 +2,24 @@ package practice2;
 
 public class getGcd {
 
-    public static int getGcd(int a, int b){
-        int minValue = Math.min(a ,b);
+    // Highest common factor
+    public static  void  getGcd(int a,int b) {
+        int minValue = Math.min(a, b);
 
-        while(minValue > 0){
-            if(a % minValue == 0 && b % minValue == 0){
-//                System.out.println("The Gcd or HCF of "+ minValue);
+        while (minValue > 0) {
+            if (a % minValue == 0 && b % minValue == 0) {
+                System.out.println("Gcd of a and b is : " + minValue);
+                return;
             }
             minValue--;
         }
-        return  minValue;
     }
+    // O (min(a,b)) ~ O(b)
+
+    // recursion gcd
 
     public static void main(String[] args) {
-      int gcd  =  getGcd(60,36);
-        System.out.println();
+       getGcd(60,96);
+
     }
 }
