@@ -13,21 +13,31 @@ public class getGcd2 {
     // step 3 (24%16, 16) === (8 , 16);
     // step 4 (16%8 , 8) == (0,8) == so the Gcd is 8
 
+    public static int eucledianGcd(int a , int b){
+        int minValue = Math.min(a,b);
+
+        while (minValue > 0){
+
+            if(b==0){
+                return a;
+            }
+            a = a % b;
+            int c = a;
+             a = b;
+             b = c;
+             eucledianGcd(a,b);
+        }
+
+        return minValue;
+    }
+
+
 
     public static void main(String[] args) {
-        // now covert this in to code
-
-        int a = 40;
-        int b = 24;
-
-        while(b >= 0){
-            if(b > 0){
-                a = a % b;
-                b = a;
-            }
-            System.out.println(b);
-        }
-    }
+         // now covert this in to code
+          int answer = eucledianGcd(12,14);
+        System.out.println(answer);
+           }
 
 
 }
